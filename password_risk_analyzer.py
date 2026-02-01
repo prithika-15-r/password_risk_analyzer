@@ -16,7 +16,7 @@ def password_strength(password):
         score+=1
     else:
         feedback.append("missing uppercase letters, add uppercase letters")
-    if re.search(r"[a-b]", password):
+    if re.search(r"[a-z]", password):
         score+=1
     else:
         feedback.append("Missing lowercase letters; Add Lowercase letters")
